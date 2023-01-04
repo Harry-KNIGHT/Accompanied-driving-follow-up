@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C565A072966098F00FD1011 /* SCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A062966098F00FD1011 /* SCAApp.swift */; };
+		3C565A0B2966099000FD1011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C565A0A2966099000FD1011 /* Assets.xcassets */; };
+		3C565A0E2966099000FD1011 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C565A0D2966099000FD1011 /* Preview Assets.xcassets */; };
+		3C565A162966150000FD1011 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A152966150000FD1011 /* HomeView.swift */; };
+		3C565A1A2966154900FD1011 /* OpenSheetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A192966154900FD1011 /* OpenSheetButtonView.swift */; };
+		3C565A1C2966155D00FD1011 /* AddDistanceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A1B2966155D00FD1011 /* AddDistanceFormView.swift */; };
+		3C565A20296615A600FD1011 /* DistanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A1F296615A600FD1011 /* DistanceModel.swift */; };
+		3C565A232966167100FD1011 /* AddDistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A222966167100FD1011 /* AddDistanceViewModel.swift */; };
+		3C565A2629661C6100FD1011 /* KilometerOrCounterPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C565A032966098F00FD1011 /* SCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C565A062966098F00FD1011 /* SCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCAApp.swift; sourceTree = "<group>"; };
+		3C565A0A2966099000FD1011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C565A0D2966099000FD1011 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C565A152966150000FD1011 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3C565A192966154900FD1011 /* OpenSheetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSheetButtonView.swift; sourceTree = "<group>"; };
+		3C565A1B2966155D00FD1011 /* AddDistanceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDistanceFormView.swift; sourceTree = "<group>"; };
+		3C565A1F296615A600FD1011 /* DistanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceModel.swift; sourceTree = "<group>"; };
+		3C565A222966167100FD1011 /* AddDistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDistanceViewModel.swift; sourceTree = "<group>"; };
+		3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilometerOrCounterPickerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C565A002966098F00FD1011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C5659FA2966098F00FD1011 = {
+			isa = PBXGroup;
+			children = (
+				3C565A052966098F00FD1011 /* SCA */,
+				3C565A042966098F00FD1011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C565A042966098F00FD1011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A032966098F00FD1011 /* SCA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C565A052966098F00FD1011 /* SCA */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A062966098F00FD1011 /* SCAApp.swift */,
+				3C565A212966165B00FD1011 /* Model */,
+				3C565A1D2966156600FD1011 /* Views */,
+				3C565A242966167600FD1011 /* ViewModel */,
+				3C565A0A2966099000FD1011 /* Assets.xcassets */,
+				3C565A0C2966099000FD1011 /* Preview Content */,
+			);
+			path = SCA;
+			sourceTree = "<group>";
+		};
+		3C565A0C2966099000FD1011 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A0D2966099000FD1011 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C565A14296614E500FD1011 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A152966150000FD1011 /* HomeView.swift */,
+				3C565A1B2966155D00FD1011 /* AddDistanceFormView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3C565A1D2966156600FD1011 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A14296614E500FD1011 /* Screens */,
+				3C565A1E2966157400FD1011 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C565A1E2966157400FD1011 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A192966154900FD1011 /* OpenSheetButtonView.swift */,
+				3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3C565A212966165B00FD1011 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A1F296615A600FD1011 /* DistanceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C565A242966167600FD1011 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C565A222966167100FD1011 /* AddDistanceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C565A022966098F00FD1011 /* SCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C565A112966099000FD1011 /* Build configuration list for PBXNativeTarget "SCA" */;
+			buildPhases = (
+				3C5659FF2966098F00FD1011 /* Sources */,
+				3C565A002966098F00FD1011 /* Frameworks */,
+				3C565A012966098F00FD1011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCA;
+			productName = SCA;
+			productReference = 3C565A032966098F00FD1011 /* SCA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C5659FB2966098F00FD1011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					3C565A022966098F00FD1011 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 3C5659FE2966098F00FD1011 /* Build configuration list for PBXProject "SCA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C5659FA2966098F00FD1011;
+			productRefGroup = 3C565A042966098F00FD1011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C565A022966098F00FD1011 /* SCA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C565A012966098F00FD1011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C565A0E2966099000FD1011 /* Preview Assets.xcassets in Resources */,
+				3C565A0B2966099000FD1011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C5659FF2966098F00FD1011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C565A20296615A600FD1011 /* DistanceModel.swift in Sources */,
+				3C565A072966098F00FD1011 /* SCAApp.swift in Sources */,
+				3C565A162966150000FD1011 /* HomeView.swift in Sources */,
+				3C565A232966167100FD1011 /* AddDistanceViewModel.swift in Sources */,
+				3C565A1A2966154900FD1011 /* OpenSheetButtonView.swift in Sources */,
+				3C565A1C2966155D00FD1011 /* AddDistanceFormView.swift in Sources */,
+				3C565A2629661C6100FD1011 /* KilometerOrCounterPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C565A0F2966099000FD1011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C565A102966099000FD1011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C565A122966099000FD1011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SCA/Preview Content\"";
+				DEVELOPMENT_TEAM = 99M75C322U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elliot.knight.SCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C565A132966099000FD1011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SCA/Preview Content\"";
+				DEVELOPMENT_TEAM = 99M75C322U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elliot.knight.SCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C5659FE2966098F00FD1011 /* Build configuration list for PBXProject "SCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C565A0F2966099000FD1011 /* Debug */,
+				3C565A102966099000FD1011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C565A112966099000FD1011 /* Build configuration list for PBXNativeTarget "SCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C565A122966099000FD1011 /* Debug */,
+				3C565A132966099000FD1011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C5659FB2966098F00FD1011 /* Project object */;
+}
