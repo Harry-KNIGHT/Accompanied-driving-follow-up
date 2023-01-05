@@ -13,6 +13,7 @@ struct TotalDistanceForm: View {
 		Form {
 			Section(header: Text("Distance totale")) {
 				TextField("45,5km", text: $distanceInKm)
+					.keyboardType(.decimalPad)
 			}
 		}
     }

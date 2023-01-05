@@ -20,6 +20,7 @@ struct AddStartAndFinalDistanceForm: View {
 				TextField("1,450km", text: $secondCounterValue)
 			}
 		}
+		.keyboardType(.decimalPad)
     }
 }
 
