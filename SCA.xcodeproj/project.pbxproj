@@ -18,6 +18,7 @@
 		3C565A2629661C6100FD1011 /* KilometerOrCounterPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */; };
 		3C6C3DAC296767A200E379B5 /* AddStartAndFinalDistanceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3DAB296767A200E379B5 /* AddStartAndFinalDistanceForm.swift */; };
 		3C6C3DAE29676B9200E379B5 /* TotalDistanceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3DAD29676B9200E379B5 /* TotalDistanceForm.swift */; };
+		3CF3CD3E29676DDF0099572C /* AddDistanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3CD3D29676DDF0099572C /* AddDistanceButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilometerOrCounterPickerView.swift; sourceTree = "<group>"; };
 		3C6C3DAB296767A200E379B5 /* AddStartAndFinalDistanceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStartAndFinalDistanceForm.swift; sourceTree = "<group>"; };
 		3C6C3DAD29676B9200E379B5 /* TotalDistanceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDistanceForm.swift; sourceTree = "<group>"; };
+		3CF3CD3D29676DDF0099572C /* AddDistanceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDistanceButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				3C565A192966154900FD1011 /* OpenSheetButtonView.swift */,
 				3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */,
+				3CF3CD3D29676DDF0099572C /* AddDistanceButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				3C565A072966098F00FD1011 /* SCAApp.swift in Sources */,
 				3C565A162966150000FD1011 /* HomeView.swift in Sources */,
 				3C565A232966167100FD1011 /* AddDistanceViewModel.swift in Sources */,
+				3CF3CD3E29676DDF0099572C /* AddDistanceButton.swift in Sources */,
 				3C565A1A2966154900FD1011 /* OpenSheetButtonView.swift in Sources */,
 				3C565A1C2966155D00FD1011 /* AddDistanceFormView.swift in Sources */,
 				3C565A2629661C6100FD1011 /* KilometerOrCounterPickerView.swift in Sources */,
@@ -351,7 +355,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,7 +385,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
