@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct AddDistanceFormView: View {
-	@State private var firstCounterValue: Int?
-	@State private var secondCounterValue: Int?
+	@State private var firstCounterValue: String = ""
+	@State private var secondCounterValue: String = ""
 
 	var body: some View {
 		NavigationView {

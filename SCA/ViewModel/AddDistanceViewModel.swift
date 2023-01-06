@@ -11,7 +11,9 @@ class AddDistanceViewModel: ObservableObject {
 	@Published var distancesDone = Array<Distance>()
 
 	func addCounterDistance(from counterStartKilometers: Int?, to counterEndKilometers: Int?)  {
-		guard let counterStartKilometers = counterStartKilometers, let counterEndKilometers = counterEndKilometers else { return }
+		guard let counterStartKilometers = counterStartKilometers,
+			  let counterEndKilometers = counterEndKilometers
+		else { return }
 
 		let counterDistance = Distance(counterStartKilometers: counterStartKilometers, counterEndKilometers: counterEndKilometers)
 
