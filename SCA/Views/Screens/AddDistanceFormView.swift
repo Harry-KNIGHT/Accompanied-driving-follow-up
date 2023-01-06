@@ -8,20 +8,15 @@
 import SwiftUI
 
 struct AddDistanceFormView: View {
-	@State private var kilometerOrCounter: KilometerOrCounter = .counter
-	@State private var firstCounterValue = ""
-	@State private var secondCounterValue = ""
-	@State private var distanceInKm = ""
+	@State private var firstCounterValue: Int?
+	@State private var secondCounterValue: Int?
+
 	var body: some View {
 		NavigationView {
 			VStack {
-				KilometerOrCounterPickerView(kilometerOrCounter: $kilometerOrCounter)
-				switch kilometerOrCounter {
-				case .counter:
-					AddStartAndFinalDistanceForm(firstCounterValue: $firstCounterValue, secondCounterValue: $secondCounterValue)
-				case .distance:
-					TotalDistanceForm(distanceInKm: $distanceInKm)
-				}
+					AddStartAndFinalDistanceForm(
+						firstCounterValue: $firstCounterValue,
+						secondCounterValue: $secondCounterValue)
 				Spacer()
 			}
 			.navigationTitle("Ajouter une distance")

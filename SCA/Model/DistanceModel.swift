@@ -11,23 +11,8 @@ struct Distance: Identifiable {
 	var id = UUID()
 	let counterStartKilometers: Int?
 	let counterEndKilometers: Int?
-	let kilometers: Double?
-	let kilometerOrCounter: KilometerOrCounter
-}
-
-enum KilometerOrCounter: CaseIterable {
-	case counter, distance
-
-	var kmOrCounter: String {
-		switch self {
-		case .counter:
-			return "Compteur"
-		case .distance:
-			return "Distance"
-		}
-	}
 }
 
 extension Distance {
-	static let distanceSample = Distance(counterStartKilometers: 1_300, counterEndKilometers: 1_400, kilometers: nil, kilometerOrCounter: .counter)
+	static let distanceSample = Distance(counterStartKilometers: 1_300, counterEndKilometers: 1_400)
 }

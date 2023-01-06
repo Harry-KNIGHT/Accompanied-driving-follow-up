@@ -15,9 +15,7 @@
 		3C565A1C2966155D00FD1011 /* AddDistanceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A1B2966155D00FD1011 /* AddDistanceFormView.swift */; };
 		3C565A20296615A600FD1011 /* DistanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A1F296615A600FD1011 /* DistanceModel.swift */; };
 		3C565A232966167100FD1011 /* AddDistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A222966167100FD1011 /* AddDistanceViewModel.swift */; };
-		3C565A2629661C6100FD1011 /* KilometerOrCounterPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */; };
 		3C6C3DAC296767A200E379B5 /* AddStartAndFinalDistanceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3DAB296767A200E379B5 /* AddStartAndFinalDistanceForm.swift */; };
-		3C6C3DAE29676B9200E379B5 /* TotalDistanceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3DAD29676B9200E379B5 /* TotalDistanceForm.swift */; };
 		3CF3CD3E29676DDF0099572C /* AddDistanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3CD3D29676DDF0099572C /* AddDistanceButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +29,7 @@
 		3C565A1B2966155D00FD1011 /* AddDistanceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDistanceFormView.swift; sourceTree = "<group>"; };
 		3C565A1F296615A600FD1011 /* DistanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceModel.swift; sourceTree = "<group>"; };
 		3C565A222966167100FD1011 /* AddDistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDistanceViewModel.swift; sourceTree = "<group>"; };
-		3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilometerOrCounterPickerView.swift; sourceTree = "<group>"; };
 		3C6C3DAB296767A200E379B5 /* AddStartAndFinalDistanceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStartAndFinalDistanceForm.swift; sourceTree = "<group>"; };
-		3C6C3DAD29676B9200E379B5 /* TotalDistanceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDistanceForm.swift; sourceTree = "<group>"; };
 		3CF3CD3D29676DDF0099572C /* AddDistanceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDistanceButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				3C565A192966154900FD1011 /* OpenSheetButtonView.swift */,
-				3C565A2529661C6100FD1011 /* KilometerOrCounterPickerView.swift */,
 				3CF3CD3D29676DDF0099572C /* AddDistanceButton.swift */,
 			);
 			path = Buttons;
@@ -133,7 +128,6 @@
 		3C6C3DAF29676BF700E379B5 /* Forms */ = {
 			isa = PBXGroup;
 			children = (
-				3C6C3DAD29676B9200E379B5 /* TotalDistanceForm.swift */,
 				3C6C3DAB296767A200E379B5 /* AddStartAndFinalDistanceForm.swift */,
 			);
 			path = Forms;
@@ -209,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C6C3DAE29676B9200E379B5 /* TotalDistanceForm.swift in Sources */,
 				3C6C3DAC296767A200E379B5 /* AddStartAndFinalDistanceForm.swift in Sources */,
 				3C565A20296615A600FD1011 /* DistanceModel.swift in Sources */,
 				3C565A072966098F00FD1011 /* SCAApp.swift in Sources */,
@@ -218,7 +211,6 @@
 				3CF3CD3E29676DDF0099572C /* AddDistanceButton.swift in Sources */,
 				3C565A1A2966154900FD1011 /* OpenSheetButtonView.swift in Sources */,
 				3C565A1C2966155D00FD1011 /* AddDistanceFormView.swift in Sources */,
-				3C565A2629661C6100FD1011 /* KilometerOrCounterPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

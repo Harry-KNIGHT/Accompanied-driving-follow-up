@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct AddDistanceButton: View {
+	@EnvironmentObject var addDistanceVM: AddDistanceViewModel
+
+	@Binding var counterStartKilometers: Int?
+	@Binding var counterEndKilometers: Int?
+
+
     var body: some View {
         Button(action: {
-			// Add distance
+			addDistanceVM.addCounterDistance(from: counterStartKilometers, to: counterEndKilometers)
 		}, label: {
 			HStack {
 				Image(systemName: "plus.app.fill")
@@ -24,7 +30,11 @@ struct AddDistanceButton: View {
 
 struct AddDistanceButton_Previews: PreviewProvider {
     static var previews: some View {
-        AddDistanceButton()
+		AddDistanceButton(
+			counterStartKilometers: .constant(0),
+			counterEndKilometers: .constant(10)
+		)
+			.environmentObject(AddDistanceViewModel())
 			.previewLayout(.sizeThatFits)
     }
 }
