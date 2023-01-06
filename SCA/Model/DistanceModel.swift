@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Distance: Identifiable {
 	var id = UUID()
-	let counterStartKilometers: Double?
-	let counterEndKilometers: Double?
+	let counterStartKilometers: Int?
+	let counterEndKilometers: Int?
 	let kilometers: Double?
 	let kilometerOrCounter: KilometerOrCounter
 }
