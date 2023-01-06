@@ -9,10 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
 	@State private var isShowingSheet: Bool = false
+	@EnvironmentObject var distanceVM: AddDistanceViewModel
     var body: some View {
 		VStack {
 			Spacer()
-			Text("0 / 3 000km")
+			Text("\(distanceVM.distanceDone) / 3 000km")
 				.font(.largeTitle)
 				.fontWeight(.semibold)
 				.padding(.top, 20)
@@ -30,5 +31,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+			.environmentObject(AddDistanceViewModel())
     }
 }

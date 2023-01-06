@@ -17,6 +17,7 @@ struct AddDistanceButton: View {
     var body: some View {
         Button(action: {
 			addDistanceVM.addCounterDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
+			addDistanceVM.calculSessionDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
 		}, label: {
 			HStack {
 				Image(systemName: "plus.app.fill")
