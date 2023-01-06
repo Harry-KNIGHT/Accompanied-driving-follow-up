@@ -10,11 +10,15 @@ import SwiftUI
 struct AddDistanceButton: View {
     var body: some View {
         Button(action: {
-			print("Distance added 😎")
+			// Add distance
 		}, label: {
-			Label("Ajouter", systemImage: "plus.circle.fill")
-				.font(.title2)
+			HStack {
+				Image(systemName: "plus.app.fill")
+					.font(.title3)
+				Text("Ajouter")
+			}
 		})
+		.buttonStyle(.borderedProminent)
     }
 }
 

@@ -14,13 +14,19 @@ struct AddStartAndFinalDistanceForm: View {
     var body: some View {
 		Form {
 			Section(header: Text("Distance début")) {
-				TextField("1,45km", text: $firstCounterValue)
+				TextField("13456", text: $firstCounterValue)
 			}
 			Section(header: Text("Distance fin")) {
-				TextField("1,450km", text: $secondCounterValue)
+				TextField("14230", text: $secondCounterValue)
 			}
 		}
-		.keyboardType(.decimalPad)
+		.toolbar {
+			ToolbarItemGroup(placement: .keyboard) {
+					Spacer()
+					AddDistanceButton()
+			}
+		}
+		.keyboardType(.numberPad)
     }
 }
 
