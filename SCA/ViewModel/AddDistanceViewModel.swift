@@ -8,11 +8,8 @@
 import Foundation
 
 class AddDistanceViewModel: ObservableObject {
-	var distancesDone = Array<Distance>()
+	@Published var distancesDone = Array<Distance>()
 
-	private var distanceCalculed = [Int]()
-
-	@Published var distanceDone: Int = 0
 
 	func addCounterDistance(from counterStartKilometers: Int?, to counterEndKilometers: Int?)  {
 		guard let counterStartKilometers = counterStartKilometers,
@@ -23,18 +20,14 @@ class AddDistanceViewModel: ObservableObject {
 
 		self.distancesDone.append(counterDistance)
 	}
-	
-	func calculSessionDistance(from counterStartKilometers: Int?, to counterEndKilometers: Int?) {
-		guard let counterStartKilometers = counterStartKilometers,
-			  let counterEndKilometers = counterEndKilometers
-		else { return }
-		
-		var calculDistanceDone = (counterEndKilometers - counterStartKilometers)
-		if calculDistanceDone < 0 { calculDistanceDone = 0 }
-		self.distanceCalculed.append(calculDistanceDone)
 
-		distanceDone = self.distanceCalculed.reduce(0, +)
+	func calculDistance() -> Int {
+
+		let calculDistancesArray = distancesDone.map { ($0.counterEndKilometers ?? 0) - ($0.counterStartKilometers ?? 0) }
+
+		return calculDistancesArray.reduce(0, +)
 	}
+	
 
 	func isTextFieldsEmpty(_ counterStartKilometers: String,_ counterEndKilometers: String) -> Bool {
 		if counterEndKilometers != "", counterStartKilometers != "" {
