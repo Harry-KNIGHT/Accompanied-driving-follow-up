@@ -8,7 +8,7 @@
 import Foundation
 
 class AddDistanceViewModel: ObservableObject {
-	private var distancesDone = Array<Distance>()
+	var distancesDone = Array<Distance>()
 
 	private var distanceCalculed = [Int]()
 
