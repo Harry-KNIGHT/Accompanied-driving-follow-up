@@ -29,12 +29,33 @@ class AddDistanceViewModel: ObservableObject {
 			  let counterEndKilometers = counterEndKilometers
 		else { return }
 		
-		let calculDistanceDone = (counterEndKilometers - counterStartKilometers)
-		
+		var calculDistanceDone = (counterEndKilometers - counterStartKilometers)
+		if calculDistanceDone < 0 { calculDistanceDone = 0 }
 		self.distanceCalculed.append(calculDistanceDone)
 
 		distanceDone = self.distanceCalculed.reduce(0, +)
+	}
 
+	func isTextFieldsEmpty(_ counterStartKilometers: String,_ counterEndKilometers: String) -> Bool {
+		if counterEndKilometers != "", counterStartKilometers != "" {
+			return false
+		}
+		return true
+	}
+
+	func isDistanceIsUpperZero(from counterStartKilometers: Int?, to counterEndKilometers: Int?) throws -> Bool {
+		guard let counterStartKilometers = counterStartKilometers,
+			  let counterEndKilometers = counterEndKilometers
+		else { throw DistanceError.noDistances }
+
+		if ((counterEndKilometers - counterStartKilometers) < 0) {
+			return true
+		}
+		return false
+	}
+
+	enum DistanceError: Error {
+		case noDistances
 	}
 }
 

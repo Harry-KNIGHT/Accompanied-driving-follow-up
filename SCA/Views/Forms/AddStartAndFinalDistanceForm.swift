@@ -10,7 +10,7 @@ import SwiftUI
 struct AddStartAndFinalDistanceForm: View {
 	@Binding var firstCounterValue: String
 	@Binding var secondCounterValue: String
-
+	@EnvironmentObject var distanceVM: AddDistanceViewModel
     var body: some View {
 		Form {
 			Section(header: Text("Distance début")) {
@@ -28,7 +28,9 @@ struct AddStartAndFinalDistanceForm: View {
 					Spacer()
 				AddDistanceButton(
 					counterStartKilometers: $firstCounterValue,
-					counterEndKilometers: $secondCounterValue)
+					counterEndKilometers: $secondCounterValue
+				)
+				.disabled(distanceVM.isTextFieldsEmpty(firstCounterValue, secondCounterValue))
 			}
 		}
     }
@@ -37,5 +39,6 @@ struct AddStartAndFinalDistanceForm: View {
 struct AddStartAndFinalDistanceForm_Previews: PreviewProvider {
     static var previews: some View {
 		AddStartAndFinalDistanceForm(firstCounterValue: .constant("12344"), secondCounterValue: .constant("0"))
+			.environmentObject(AddDistanceViewModel())
     }
 }
