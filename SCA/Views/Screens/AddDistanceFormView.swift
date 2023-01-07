@@ -10,13 +10,15 @@ import SwiftUI
 struct AddDistanceFormView: View {
 	@State private var firstCounterValue: String = ""
 	@State private var secondCounterValue: String = ""
-
+	@Binding var showSheet: Bool
 	var body: some View {
 		NavigationView {
 			VStack {
 					AddStartAndFinalDistanceForm(
 						firstCounterValue: $firstCounterValue,
-						secondCounterValue: $secondCounterValue)
+						secondCounterValue: $secondCounterValue,
+						showSheet: $showSheet
+					)
 				Spacer()
 			}
 			.navigationTitle("Ajouter une distance")
@@ -29,7 +31,7 @@ struct AddDistanceFormView: View {
 struct AddDistanceFormView_Previews: PreviewProvider {
 	static var previews: some View {
 		NavigationView {
-			AddDistanceFormView()
+			AddDistanceFormView(showSheet: .constant(true))
 		}
 	}
 }

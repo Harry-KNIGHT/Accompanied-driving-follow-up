@@ -19,7 +19,7 @@ struct OpenSheetButtonView: View {
 				.frame(width: 100)
 		})
 		.sheet(isPresented: $isSheetOpened) {
-			AddDistanceFormView()
+			AddDistanceFormView(showSheet: $isSheetOpened)
 		}
     }
 }

@@ -13,11 +13,13 @@ struct AddDistanceButton: View {
 	@Binding var counterStartKilometers: String
 	@Binding var counterEndKilometers: String
 
+	@Binding var showSheet: Bool
+	var body: some View {
+		Button(action: {
+			addDistanceVM.addCounterDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
+			addDistanceVM.calculSessionDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
+			showSheet = false
 
-    var body: some View {
-        Button(action: {
-				addDistanceVM.addCounterDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
-				addDistanceVM.calculSessionDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
 		}, label: {
 			HStack {
 				Image(systemName: "plus.app.fill")
@@ -26,16 +28,17 @@ struct AddDistanceButton: View {
 			}
 		})
 		.buttonStyle(.borderedProminent)
-    }
+	}
 }
 
 struct AddDistanceButton_Previews: PreviewProvider {
-    static var previews: some View {
+	static var previews: some View {
 		AddDistanceButton(
 			counterStartKilometers: .constant("0"),
-			counterEndKilometers: .constant("")
+			counterEndKilometers: .constant(""),
+			showSheet: .constant(true)
 		)
-			.environmentObject(AddDistanceViewModel())
-			.previewLayout(.sizeThatFits)
-    }
+		.environmentObject(AddDistanceViewModel())
+		.previewLayout(.sizeThatFits)
+	}
 }
