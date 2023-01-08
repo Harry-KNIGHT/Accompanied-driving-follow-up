@@ -25,6 +25,7 @@ struct AddDistanceButton: View {
 				Text("Ajouter")
 			}
 		})
+		.accessibilityLabel("Ajouter distance")
 		.buttonStyle(.borderedProminent)
 		.disabled(
 			distanceVM.isEndDistanceIsUpperThanStartCounter(

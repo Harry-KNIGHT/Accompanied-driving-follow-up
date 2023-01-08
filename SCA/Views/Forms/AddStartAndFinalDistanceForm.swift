@@ -14,14 +14,15 @@ struct AddStartAndFinalDistanceForm: View {
 	@Binding var showSheet: Bool
     var body: some View {
 		Form {
-			Section(header: Text("Distance début")) {
-				TextField("Enter Number", value: $firstCounterValue, format: .number)
+			Section(header: Text("Compteur au début ")) {
+				TextField("500", value: $firstCounterValue, format: .number)
 			}
-			Section(header: Text("Distance fin")) {
-				TextField("Enter Number", value: $secondCounterValue, format: .number)
+			.accessibilityLabel("Valeur compteur en début de conduite")
 
-
+			Section(header: Text("Compteur à la fin")) {
+				TextField("700", value: $secondCounterValue, format: .number)
 			}
+			.accessibilityLabel("Valeur compteur en fin de conduite")
 		}
 		.keyboardType(.numberPad)
 

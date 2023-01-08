@@ -17,6 +17,7 @@ struct HomeView: View {
 				.font(.largeTitle)
 				.fontWeight(.semibold)
 				.padding(.top, 20)
+				.accessibilityValue("\(distanceVM.calculDistance()) / 3 000km")
 			Spacer()
 			HStack {
 				Spacer()

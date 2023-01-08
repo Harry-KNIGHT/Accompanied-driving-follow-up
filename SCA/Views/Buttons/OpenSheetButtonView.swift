@@ -18,6 +18,7 @@ struct OpenSheetButtonView: View {
 				.scaledToFit()
 				.frame(width: 100)
 		})
+		.accessibilityLabel("Ouvrir le formulaire")
 		.sheet(isPresented: $isSheetOpened) {
 			AddDistanceFormView(showSheet: $isSheetOpened)
 		}
