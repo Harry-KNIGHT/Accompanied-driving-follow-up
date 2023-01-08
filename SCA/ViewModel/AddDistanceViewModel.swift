@@ -27,28 +27,14 @@ class AddDistanceViewModel: ObservableObject {
 
 		return calculDistancesArray.reduce(0, +)
 	}
-	
 
-	func isTextFieldsEmpty(_ counterStartKilometers: String,_ counterEndKilometers: String) -> Bool {
-		if counterEndKilometers != "", counterStartKilometers != "" {
-			return false
-		}
-		return true
-	}
+	func isEndDistanceIsUpperThanStartCounter(distance: Distance) -> Bool {
+		guard let counterStartKilometers = distance.counterStartKilometers,
+			  let counterEndKilometers = distance.counterEndKilometers
+		else { return true }
 
-	func isDistanceIsUpperZero(from counterStartKilometers: Int?, to counterEndKilometers: Int?) throws -> Bool {
-		guard let counterStartKilometers = counterStartKilometers,
-			  let counterEndKilometers = counterEndKilometers
-		else { throw DistanceError.noDistances }
+		return  (counterEndKilometers < counterStartKilometers)
 
-		if ((counterEndKilometers - counterStartKilometers) < 0) {
-			return true
-		}
-		return false
-	}
-
-	enum DistanceError: Error {
-		case noDistances
 	}
 }
 

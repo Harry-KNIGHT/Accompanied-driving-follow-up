@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct AddDistanceButton: View {
-	@EnvironmentObject var addDistanceVM: AddDistanceViewModel
+	@EnvironmentObject var distanceVM: AddDistanceViewModel
 
-	@Binding var counterStartKilometers: String
-	@Binding var counterEndKilometers: String
+	@Binding var counterStartKilometers: Int?
+	@Binding var counterEndKilometers: Int?
 
 	@Binding var showSheet: Bool
 	var body: some View {
 		Button(action: {
-			addDistanceVM.addCounterDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
-			//addDistanceVM.calculSessionDistance(from: Int(counterStartKilometers), to: Int(counterEndKilometers))
+			distanceVM.addCounterDistance(from: counterStartKilometers, to: counterEndKilometers)
 			showSheet = false
-
 		}, label: {
 			HStack {
 				Image(systemName: "plus.app.fill")
@@ -28,14 +26,22 @@ struct AddDistanceButton: View {
 			}
 		})
 		.buttonStyle(.borderedProminent)
+		.disabled(
+			distanceVM.isEndDistanceIsUpperThanStartCounter(
+				distance:
+					Distance(
+						counterStartKilometers: counterStartKilometers,
+						counterEndKilometers: counterEndKilometers)
+			)
+		)
 	}
 }
 
 struct AddDistanceButton_Previews: PreviewProvider {
 	static var previews: some View {
 		AddDistanceButton(
-			counterStartKilometers: .constant("0"),
-			counterEndKilometers: .constant(""),
+			counterStartKilometers: .constant(0),
+			counterEndKilometers: .constant(0),
 			showSheet: .constant(true)
 		)
 		.environmentObject(AddDistanceViewModel())
