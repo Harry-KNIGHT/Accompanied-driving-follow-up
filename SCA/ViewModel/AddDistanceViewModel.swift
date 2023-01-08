@@ -8,8 +8,23 @@
 import Foundation
 
 class AddDistanceViewModel: ObservableObject {
-	@Published var distancesDone = Array<Distance>()
+	@Published var distancesDone: Array<Distance>
 
+	init() {
+		if let data = UserDefaults.standard.data(forKey: "SavedDistance") {
+			if let decoded = try? JSONDecoder().decode([Distance].self, from: data) {
+				distancesDone = decoded
+				return
+			}
+		}
+		distancesDone = []
+	}
+
+	func saveDistances() {
+		if let encoded = try? JSONEncoder().encode(distancesDone) {
+			UserDefaults.standard.set(encoded, forKey: "SavedDistance")
+		}
+	}
 
 	func addCounterDistance(from counterStartKilometers: Int?, to counterEndKilometers: Int?)  {
 		guard let counterStartKilometers = counterStartKilometers,
@@ -19,6 +34,7 @@ class AddDistanceViewModel: ObservableObject {
 		let counterDistance = Distance(counterStartKilometers: counterStartKilometers, counterEndKilometers: counterEndKilometers)
 
 		self.distancesDone.append(counterDistance)
+		saveDistances()
 	}
 
 	func calculDistance() -> Int {

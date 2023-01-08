@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Distance: Identifiable {
+struct Distance: Identifiable, Codable {
 	var id = UUID()
 	let counterStartKilometers: Int?
 	let counterEndKilometers: Int?
