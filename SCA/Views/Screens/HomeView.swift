@@ -13,7 +13,7 @@ struct HomeView: View {
     var body: some View {
 		VStack {
 			Spacer()
-			Text("\(distanceVM.calculDistance())/  3 000km")
+			Text("\(distanceVM.calculDistance()) / 3 000km")
 				.font(.largeTitle)
 				.fontWeight(.semibold)
 				.padding(.top, 20)
