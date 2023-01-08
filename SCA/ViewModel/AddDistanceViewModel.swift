@@ -33,8 +33,9 @@ class AddDistanceViewModel: ObservableObject {
 			  let counterEndKilometers = distance.counterEndKilometers
 		else { return true }
 
-		return  (counterEndKilometers < counterStartKilometers)
+		guard (counterEndKilometers != counterStartKilometers) else { return true }
 
+		return  (counterEndKilometers < counterStartKilometers)
 	}
 }
 
