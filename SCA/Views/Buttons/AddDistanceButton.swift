@@ -19,11 +19,9 @@ struct AddDistanceButton: View {
 			distanceVM.addCounterDistance(from: counterStartKilometers, to: counterEndKilometers)
 			showSheet = false
 		}, label: {
-			HStack {
-				Image(systemName: "plus.app.fill")
-					.font(.title3)
-				Text("Ajouter")
-			}
+			Text("Ajouter")
+				.font(.title3)
+				.frame(maxWidth: .infinity)
 		})
 		.accessibilityLabel("Ajouter distance")
 		.buttonStyle(.borderedProminent)
